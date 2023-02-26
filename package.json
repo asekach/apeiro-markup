@@ -1,0 +1,24 @@
+{
+  "name": "Gulp4 - markup",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Я",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.1.1",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}

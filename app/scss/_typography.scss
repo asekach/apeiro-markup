@@ -1,0 +1,19 @@
+.wrapper__body{
+    h1{}
+
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 40px;
+        @media screen and (max-width: 991px){
+            font-size: 30px;
+            line-height: 37px;
+            padding-bottom: 30px;
+        }		
+    }
+}
+
