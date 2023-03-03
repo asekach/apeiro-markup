@@ -148,6 +148,45 @@ $(function(){
         });
     }
 
+    // Tabs
+    $('ul.tabs__caption').on('click', 'li:not(.active) a', function(e) {
+        e.preventDefault()
+        $(this).parent().addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content').removeClass('active')
+            .eq($(this).parent().index()).addClass('active');
+    });
+   
+    // Code copy in buffer
+    $('.copy-code').on('click', function(e){
+        e.preventDefault();
+        navigator.clipboard.writeText($(this).data('code'))
+    })
 
-    
+    // Select
+    $('select').niceSelect();
+
+    // Form donate
+    $('.element-sum-set a').on('click', function(e){
+        e.preventDefault()
+        $('#otherSum').val($(this).data('sum'))
+    })
+    $('#currencySelect').on('change', function(e){
+        $('.currency-set-sum').each((i, item) => {
+            item.textContent = e.target.value;
+        })
+    })
+
+    // Mask phone
+    $("#phone").mask("+380(999) 999-99-99");
+
+    // Show me money
+    $('#checkbox-approve').on('change', () => $('#hide-screen-card').toggleClass('show'));
+
+    // Tabs card
+    $('ul.tabs__caption-card').on('click', 'li:not(.active) a', function(e) {
+        e.preventDefault()
+        $(this).parent().addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content-card').removeClass('active')
+            .eq($(this).parent().index()).addClass('active');
+    });
 });

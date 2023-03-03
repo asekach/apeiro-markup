@@ -7,6 +7,7 @@
         <title>Aperio</title>
         <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="css/select/nice-select.css"/>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -58,9 +59,342 @@
 
                     <div class="wrap__subpage subpage--donate">
                         <h2>способи зробити свiй внесок</h2>
-                        1
-                    </div>
+                        
+                        <div class="tabs">
 
+                            <ul class="tabs__caption">
+                              <li class="active">
+                                <a href="#p">РАЗОВА ДОПОМОГА</a>
+                              </li>
+                              <li class="">
+                                <a href="#p">Банківський переказ</a>
+                              </li>
+                              <li class="">
+                                <a href="#p">КРИПТОВАЛЮТА</a>
+                              </li>
+                              <li class="">
+                                <a href="#p">
+                                    <img src="images/pay-pal.svg" alt="logo pay-pal">
+                                </a>
+                              </li>
+                              <li class="">
+                                <a href="#p">Інші способи </a>
+                              </li>
+                            </ul>
+
+                            <div class="wrap__tabs--list">
+                                    
+                                    <div class="tabs__content active">
+                                        <div class="wrap__tabs-contant once-help">
+                                            <form>
+                                                <div class="screen-form-1">
+                                                        
+                                                        <div class="title">Оберіть суму внеску</div>
+
+                                                        <div class="choose-sum">
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="10">10 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="20">20 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="50">50 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="100">100 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="200">200 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="500">500 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item element-sum-set">
+                                                                <a href="#p" data-sum="1000">1000 <span class="currency-set-sum">EUR</span></a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="wrap-input">
+                                                                    <input id="otherSum" type="text" placeholder="Інша сума">
+                                                                </div>
+                                                            </div>
+                                                            <div class="item item-select">
+                                                                <div class="wrap-input">
+                                                                    <select id="currencySelect">
+                                                                        <option value="EUR">EUR</option>
+                                                                        <option value="USD">USD</option>
+                                                                        <option value="UAH">UAH</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="wrap-checkboxes">
+                                                            <div class="item-check">
+                                                                <div class="custom-checkbox">
+                                                                    <input type="checkbox" id="checkbox-1">
+                                                                    <label for="checkbox-1">
+                                                                        <span>Допомогти анонімно</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-check">
+                                                                <div class="custom-checkbox">
+                                                                    <input type="checkbox" id="checkbox-2">
+                                                                    <label for="checkbox-2">
+                                                                        <span>Зробити платiж щомiсячним</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="title">Введіть ваші дані</div>
+
+                                                        <div class="contact-donate-info">
+                                                            <div class="wrap-input">
+                                                                <input type="text" placeholder="Ім’я ">
+                                                            </div> 
+                                                            <div class="wrap-input">
+                                                                <input type="text" placeholder="Прізвище ">
+                                                            </div>
+                                                            <div class="wrap-input">
+                                                                <input type="text" placeholder="e-mail ">
+                                                            </div>
+                                                            <div class="wrap-input">
+                                                                <input 
+                                                                    type="text" 
+                                                                    id="phone"
+                                                                    placeholder="+380(___) ___-__-__"
+                                                                >
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="wrap-checkbox-approv">
+                                                            <div class="custom-checkbox">
+                                                                <input type="checkbox" id="checkbox-approve">
+                                                                <label for="checkbox-approve">
+                                                                    <span>Я погоджуюсь з умовами використання та умовами оферти та даю згоду на обробку моїх персональних даних відповідно до політики конфіденційності</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+
+                                                </div>
+                                                <div id="hide-screen-card" class="screen-form-2">
+                                                    
+                                                    <div class="wrap-card-pay">
+                                                        <div class="container-mar">
+
+                                                            <ul class="tabs__caption-card">
+                                                                <li class="active">
+                                                                    <a href="#p">
+                                                                        Kарта
+                                                                        <div class="icon"></div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="#p">
+                                                                        Apple pay
+                                                                        <div class="icon"></div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
+                                                            <div class="tabs__content-card active">
+                                                                <div class="wrap-input width100">
+                                                                    <input type="text" placeholder="1234 1234 1234 1234">
+                                                                </div>
+                                                                <div class="wrap-input width50">
+                                                                    <input type="text" placeholder="ММ/ГГ">
+                                                                </div>
+                                                                <div class="wrap-input width50">
+                                                                    <input type="text" placeholder="CVC">
+                                                                    <div class="icon">
+                                                                        <img src="images/icon-cvc.svg" alt="icon">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wrap-input width100">
+                                                                    <input type="text" placeholder="1234 1234 1234 1234">
+                                                                </div>
+                                                                <div class="wrap-input width100">
+                                                                    <input type="text" placeholder="Kраїна">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tabs__content-card ">
+                                                                <div class="wrap-app-pay">
+                                                                    <div class="info-el">
+                                                                        <div class="icon">
+                                                                            <img src="images/icon-apple-pay.svg" alt="icon">
+                                                                        </div>
+                                                                        <div class="description">Для оформлення покупки вибрано систему Apple Pay.</div>
+                                                                    </div>
+                                                                    <div class="info-el">
+                                                                        <div class="icon">
+                                                                            <img src="images/icon-app-pay-hz.svg" alt="icon">
+                                                                        </div>
+                                                                        <div class="description">Наступний крок з'явиться після того, як ви відправите замовлення, щоб завершити оформлення покупки.</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="wrap-button">
+                                                                <input type="submit" value="сплатити">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div> 
+        
+                                    <div class="tabs__content">
+                                        <div class="wrap__tabs-contant banks">
+                                            <div class="list-banks">
+                                                <div class="bank--item">
+                                                    <div class="title">Реквiзити для перведення в валютi “Доллар”</div>
+                                                    <div class="description">
+                                                        <p>SWIFT in US dollars <span>(USD)</span></p>
+                                                        <p>BENEFICIARY APERIO Charitable Fund</p>
+                                                        <p>IBAN UA33305299000002</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bank--item">
+                                                    <div class="title">Реквiзити для перведення в валютi “Євро”</div>
+                                                    <div class="description">
+                                                        <p>SWIFT in euros <span>(EUR)</span></p>
+                                                        <p>BENEFICIARY APERIO Charitable Fund</p>
+                                                        <p>IBAN UA983052990000026002046234295</p>
+                                                        <p>SWIFT PBANUA2X</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bank--item">
+                                                    <div class="title">АТ КБ "ПРИВАТБАНК"</div>
+                                                    <div class="description">
+                                                        <p>БО Благодійний фонд АПЕРІО</p>
+                                                        <p>ЄДРПОУ 44686313</p>
+                                                        <p>Призначення платежу "Благодійна допомога"</p>
+                                                        <p>Гривня UA373052990000026000026226980</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+        
+                                    <div class="tabs__content">
+                                        <div class="wrap__tabs-contant crypto">
+                                            <div class="list-qr">
+                                                <ul>
+                                                    <li>
+                                                        <div class="qr-title">BTC</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-btc.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-1" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="qr-title">ltc</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-ltc.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-2" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="qr-title">eth</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-eth.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-3" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="qr-title">XRP</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-xrp.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-4" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="qr-title">USDT</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-usdt.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-5" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="qr-title">trx</div>
+                                                        <div class="qr-item">
+                                                            <div class="qr-image">
+                                                                <img src="images/qr-code-trx.png" alt="qr">
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrap-button">
+                                                            <a class='copy-code' data-code="some-code-5" href="#p">КОПIЮВАТИ КОД</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                
+                                    <div class="tabs__content">
+                                        <div class="wrap__tabs-contant paypal">
+                                            <!-- <span>Alexejsavenkov@gmail.com</span> -->
+                                            <!-- or -->
+                                            <a href="#p">Alexejsavenkov@gmail.com</a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="tabs__content">
+                                        <div class="wrap__tabs-contant other-help">
+                                            <div class="subtitle-orange">Чим я можу допомогти?</div>
+                                            <h3>1.	ПРИЄДНАТИСЬ ДО КОМАНДИ ВОЛОНТЕРІВ</h3>
+                                            <p>
+                                                Ви можете приєднатись до команди волонтерів Благодійного фонду АПЕРІО.
+                                                Напишіть нам чим ви можете бути корисним <a href="mailto:aperio_icf@protonmail.com">aperio_icf@protonmail.com</a> 
+                                            </p>
+                                            <h3>2.	ФІНАНСОВА ТА МАТЕРІАЛЬНА ПІДТРИМКА </h3>
+                                            <p>
+                                                Нам завжди актуальна Ваша фінансова підтримка. Донати дозволяють нам ще більше допомагати <span>ЗСУ</span> та підрозділам <span>МВС</span>. 
+                                                Дедалі більше людей звертається за гуманітарними наборами, оскільки економічна ситуація в Україні погіршується. 
+                                                Ваші пожертви акумулюються для розбудови дитячої інфраструктури в постраждалих регіонах.
+                                            </p>
+                                            <h3>3.	ПОСЛУГИ</h3>
+                                            <p>
+                                                Це допомога із сервісом, якщо Ви – бізнес. Ви також можете принести продукти харчування, речі, гігієнічні набори 
+                                                першої необхідності та медикаменти для надання первинної медичної допомоги у наш штаб. Деталі за номером <a href="tel:380501751987">+38 (050)175-19-87</a> 
+                                            </p>
+                                            <h3>4.	МЕДІА-АКТИВНІСТЬ</h3>
+                                            <p>
+                                                Репости: найпростіше, що ви можете зробити це поширювати пости та розповіді про нас, а також бути активними в інформаційному просторі. 
+                                                Благодійний фонд <span>АПЕРІО</span> молодий фонд, тому ми будемо раді будь-якій допомозі. 
+                                            </p>
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
 
@@ -145,6 +479,8 @@
         <script src="js/libs/jquery-3.6.3.min.js"></script>
         <script src="js/libs/jquery.spincrement.min.js"></script>
         <script src="js/libs/slick.min.js"></script>
+        <script src="js/libs/jquery.nice-select.js"></script>
+        <script src="js/libs/jquery.maskedinput.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
