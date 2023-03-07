@@ -597,7 +597,7 @@ main{
 					.wrap-statistics-info{
 						padding-top: 40px;
 						padding-bottom: 40px;
-						max-width: 304px;
+						max-width: 334px;
 						display: flex;
 						flex-wrap: wrap;
 						align-content: space-between;
@@ -607,6 +607,7 @@ main{
 						}
 						.item-stat{
 							width: 100%;
+							padding-left: 30px;
 							@media screen and (max-width: 767px){
 								padding: 15px 0;
 							}
@@ -614,7 +615,7 @@ main{
 								font-weight: 400;
 								font-size: 20px;
 								line-height: 24px;
-								text-align: center;
+								text-align: left;
 								color: #808080;
 								strong{
 									font-weight: 700;
@@ -631,7 +632,7 @@ main{
 								font-weight: 400;
 								font-size: 20px;
 								line-height: 24px;
-								text-align: center;
+								text-align: left;
 								color: #808080;
 								@media screen and (max-width: 767px){
 									font-size: 16px;
@@ -685,7 +686,7 @@ main{
 					justify-content: center;
 					align-items: flex-end;
 					.sum{
-						font-weight: 700;
+						font-weight: 600;
 						font-size: 200px;
 						line-height: 100%;
 						text-align: center;
@@ -2423,6 +2424,14 @@ footer{
 									line-height: 120%;
 									text-transform: uppercase;
 									color: $main-orange;
+									.currency-set-sum{
+										padding-left: 4px;
+										color: #808080;
+										font-size: 14px;
+										font-weight: 600;
+										position: relative;
+										top: 3px;
+									}
 								}
 								.wrap-input{
 									input{
